@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function change(won) {
+      let remain = 0
+      let share = 0
+      if (won >= 50000) {
+        remain = won % 50000
+        share = (won - remain) / 50000
+        console.log("50000 X", share)
+        won = remain
+      } else {
+        console.log("50000 X 0")
+      }
+      if (won >= 10000) {
+        remain = won % 10000
+        share = (won - remain) / 10000
+        console.log("10000 X", share)
+        won = remain
+      } else {
+        console.log("10000 X 0")
+      }
+      if (won >= 5000) {
+        remain = won % 5000
+        share = (won - remain) / 5000
+        console.log("5000 X", share)
+        won = remain
+      } else {
+        console.log("5000 X 0")
+      }
+      if (won >= 1000) {
+        remain = won % 1000
+        share = (won - remain) / 1000
+        console.log("1000 X", share)
+        won = remain
+      } else {
+        console.log("1000 X 0")
+      }
+      if (won >= 500) {
+        remain = won % 500
+        share = (won - remain) / 500
+        console.log("500 X", share)
+        won = remain
+      } else {
+        console.log("500 X 0")
+      }
+      if (won >= 100) {
+        remain = won % 100
+        share = (won - remain) / 100
+        console.log("100 X", share)
+        won = remain
+      } else {
+        console.log("100 X 0")
+      }
+    }
+
+    let money = 123000
+    console.log(`${money}인 경우`)
+    console.log(change(money))
+  </script>
+</body>
+
+</html>
